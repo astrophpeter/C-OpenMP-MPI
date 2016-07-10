@@ -1,0 +1,317 @@
+building lib/libhomework2.so...
+gcc -Iinclude -c -Wall -fPIC src/linalg.c -o src/linalg.o
+gcc -Iinclude -c -Wall -fPIC src/solvers.c -o src/solvers.o
+gcc -lm --shared src/linalg.o src/solvers.o -o lib/libhomework2.so
+build succeeded
+running test case TestLinalg.test_vec_add...
+test_vec_add (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+running test case TestLinalg.test_vec_sub...
+test_vec_sub (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+running test case TestLinalg.test_vec_norm...
+test_vec_norm (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+running test case TestLinalg.test_mat_add...
+test_mat_add (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+running test case TestLinalg.test_mat_vec...
+test_mat_vec (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+running test case TestLinalg.test_mat_mat...
+test_mat_mat (test_homework2_solution.TestLinalg) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+running test case TestSolver.test_solve_lower_triangular_diagonal...
+test_solve_lower_triangular_diagonal (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.008s
+
+OK
+running test case TestSolver.test_solve_lower_triangular...
+test_solve_lower_triangular (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_solve_upper_triangular_diagonal...
+test_solve_upper_triangular_diagonal (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.008s
+
+OK
+running test case TestSolver.test_solve_upper_triangular...
+test_solve_upper_triangular (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_jacobi...
+test_jacobi (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_jacobi_epsilon...
+test_jacobi_epsilon (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_gauss_seidel...
+test_gauss_seidel (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_gauss_seidel_epsilon...
+test_gauss_seidel_epsilon (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+running test case TestSolver.test_jacobi_iteration_count...
+test_jacobi_iteration_count (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+running test case TestSolver.test_gauss_seidel_iteration_count...
+test_gauss_seidel_iteration_count (test_homework2_solution.TestSolver) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+timing jacobi for size 128 iteration 1
+
+0.001685
+timing jacobi for size 128 iteration 2
+
+0.001886
+timing jacobi for size 128 iteration 3
+
+0.001699
+timing jacobi for size 128 iteration 4
+
+0.001722
+timing jacobi for size 128 iteration 5
+
+0.001832
+timing jacobi for size 128 iteration 6
+
+0.001805
+timing jacobi for size 128 iteration 7
+
+0.001773
+timing jacobi for size 128 iteration 8
+
+0.001786
+timing jacobi for size 128 iteration 9
+
+0.001851
+timing jacobi for size 128 iteration 10
+
+0.001796
+timing jacobi for size 512 iteration 1
+
+0.020756
+timing jacobi for size 512 iteration 2
+
+0.020505
+timing jacobi for size 512 iteration 3
+
+0.020263
+timing jacobi for size 512 iteration 4
+
+0.020430
+timing jacobi for size 512 iteration 5
+
+0.023161
+timing jacobi for size 512 iteration 6
+
+0.023788
+timing jacobi for size 512 iteration 7
+
+0.020973
+timing jacobi for size 512 iteration 8
+
+0.021798
+timing jacobi for size 512 iteration 9
+
+0.023839
+timing jacobi for size 512 iteration 10
+
+0.021963
+timing jacobi for size 1024 iteration 1
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 2
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 3
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 4
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 5
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 6
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 7
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 8
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 9
+timeout: the monitored command dumped core
+timing jacobi for size 1024 iteration 10
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 1
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 2
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 3
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 4
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 5
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 6
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 7
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 8
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 9
+timeout: the monitored command dumped core
+timing jacobi for size 2048 iteration 10
+timeout: the monitored command dumped core
+timing gauss_seidel for size 128 iteration 1
+
+0.001086
+timing gauss_seidel for size 128 iteration 2
+
+0.001208
+timing gauss_seidel for size 128 iteration 3
+
+0.001735
+timing gauss_seidel for size 128 iteration 4
+
+0.001466
+timing gauss_seidel for size 128 iteration 5
+
+0.001128
+timing gauss_seidel for size 128 iteration 6
+
+0.001761
+timing gauss_seidel for size 128 iteration 7
+
+0.001178
+timing gauss_seidel for size 128 iteration 8
+
+0.001120
+timing gauss_seidel for size 128 iteration 9
+
+0.001154
+timing gauss_seidel for size 128 iteration 10
+
+0.001123
+timing gauss_seidel for size 512 iteration 1
+
+0.013962
+timing gauss_seidel for size 512 iteration 2
+
+0.015185
+timing gauss_seidel for size 512 iteration 3
+
+0.014752
+timing gauss_seidel for size 512 iteration 4
+
+0.013715
+timing gauss_seidel for size 512 iteration 5
+
+0.013761
+timing gauss_seidel for size 512 iteration 6
+
+0.015232
+timing gauss_seidel for size 512 iteration 7
+
+0.016362
+timing gauss_seidel for size 512 iteration 8
+
+0.016068
+timing gauss_seidel for size 512 iteration 9
+
+0.013686
+timing gauss_seidel for size 512 iteration 10
+
+0.016501
+timing gauss_seidel for size 1024 iteration 1
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 2
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 3
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 4
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 5
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 6
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 7
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 8
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 9
+timeout: the monitored command dumped core
+timing gauss_seidel for size 1024 iteration 10
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 1
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 2
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 3
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 4
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 5
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 6
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 7
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 8
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 9
+timeout: the monitored command dumped core
+timing gauss_seidel for size 2048 iteration 10
+timeout: the monitored command dumped core

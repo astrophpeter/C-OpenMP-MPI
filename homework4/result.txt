@@ -1,0 +1,3 @@
+NAME=McGill-Peter
+BUILD=pass
+TEST=pass
